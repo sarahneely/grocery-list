@@ -30,9 +30,9 @@ app.intent('number',
 /**
  * IntentRequest w/ asynchronous response.
  */
-app.intent('checkStatus', 
+app.intent('checkStatus',
 	{
-    	'utterances':[ 
+    	'utterances':[
     		'status check', 'what is the status', 'tell me the status'
     	]
   	},
@@ -41,10 +41,10 @@ app.intent('checkStatus',
 
 	        // This is async and will run after a brief delay
 	        response.say('Status is operational, mam!');
-	    
+
 	        // Must call send to end the original request
 	        response.send();
-		
+
 		}, 250);
 
 	    // Return false immediately so alexa-app doesn't send the response
